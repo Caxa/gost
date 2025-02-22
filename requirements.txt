@@ -1,0 +1,5 @@
+python-docx
+scikit-learn
+pandas
+spacy
+joblib
