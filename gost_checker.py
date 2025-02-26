@@ -51,11 +51,11 @@ def check_document(filepath):
     # Анализ ошибок
     errors = [features[i] for i in range(len(predictions)) if predictions[i] == 0]
     if errors:
-        print("❌ Найдены ошибки:")
+        print(" Найдены ошибки:")
         for error in errors:
             print(f"- Текст: '{error['text']}', Шрифт: {error['font_name']}, Размер: {error['font_size']}")
     else:
-        print("✅ Документ соответствует ГОСТ!")
+        print(" Документ соответствует ГОСТ!")
 
 # Запуск проверки
 if __name__ == "__main__":
@@ -63,4 +63,4 @@ if __name__ == "__main__":
     if os.path.exists(filepath):
         check_document(filepath)
     else:
-        print("❌ Файл не найден.")
+        print(" Файл не найден.")
